@@ -5,19 +5,27 @@ $query=mysqli_query($koneksi,"select * from konsumen where kode_konsumen='$kode_
 $data=mysqli_fetch_array($query);
 ?>
 
-<h1>Edit Data</h1>
-<form action="update.php" METHOD="POST">
-    <label>Kode Konsumen</label>
-    <input type="text" name="kode_konsumen" value="<?php echo $data['kode_konsumen'] ?>">
-    <br>
-    <label>Nama Konsumen</label>
-    <input type="text" name="nama_konsumen" value="<?php echo $data['nama_konsumen'] ?>">
-    <br>
-    <label>Alamat Konsumen</label>
-    <input type="text" name="alamat_konsumen" value="<?php echo $data['alamat_konsumen'] ?>">
-    <br>
-    <label>Telp Konsumen</label>
-    <input type="text" name="telp_konsumen" value="<?php echo $data['telp_konsumen'] ?>">
-    <br>
-    <button>Simpan</button>
+<div class="mt-2 text-center">
+    <h1>Edit Data</h1>
+</div>
+<form action="?page=konsumen/update"method="POST">
+<div class="mb-2">
+    <label class="form-label">Kode Konsumen</label>
+    <input type="text" class="form-control" name="kode_konsumen">
+  </div>
+  <div class="mb-2">
+    <label class="form-label">Nama Konsumen</label>
+    <input type="text" class="form-control" name="nama_konsumen">
+  </div>
+  <div class="mb-2">
+    <label class="form-label">Alamat Konsumen</label>
+    <input type="text" class="form-control" name="alamat_konsumen">
+  </div>
+  <div class="mb-2">
+    <label class="form-label">Telp Konsumen</label>
+    <input type="text" class="form-control" name="telp_konsumen">
+  </div>
+    <div class="modal-footer text-center">
+    <button class="btn btn-primary">Simpan</button>
+    </div>
 </form>

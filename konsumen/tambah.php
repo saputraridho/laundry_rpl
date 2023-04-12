@@ -1,17 +1,26 @@
-<h1>Tambah Data</h1>
-
-<form action="simpan.php" METHOD="POST">
-    <label>Kode Konsumen</label>
-    <input type="text" name="kode_konsumen">
-    <br>
-    <label>Nama Konsumen</label>
-    <input type="text" name="nama_konsumen">
-    <br>
-    <label>Alamat Konsumen</label>
-    <input type="text" name="alamat_konsumen">
-    <br>
-    <label>telp Konsumen</label>
-    <input type="text" name="telp_konsumen">
-    <br>
-    <button>Simpan</button>
+<div class="mt-2 text-center">
+    <h1>Tambah Data</h1>
+</div>
+<div class="card-body">
+<form action="?page=konsumen/simpan"method="POST">
+<div class="mb-2">
+    <label class="form-label">Kode Konsumen</label>
+    <input type="text" class="form-control" name="kode_konsumen">
+  </div>
+  <div class="mb-2">
+    <label class="form-label">Nama Konsumen</label>
+    <input type="text" class="form-control" name="nama_konsumen">
+  </div>
+  <div class="mb-2">
+    <label class="form-label">Alamat Konsumen</label>
+    <input type="text" class="form-control" name="alamat_konsumen">
+  </div>
+  <div class="mb-2">
+    <label class="form-label">Telp Konsumen</label>
+    <input type="text" class="form-control" name="telp_konsumen">
+  </div>
+    <div class="modal-footer text-center">
+    <button class="btn btn-primary">Simpan</button>
+    </div>
 </form>
+</div>

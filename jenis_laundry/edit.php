@@ -5,16 +5,23 @@ $query=mysqli_query($koneksi,"select * from jenis_laundry where id_jenislaundry=
 $data=mysqli_fetch_array($query);
 ?>
 
-<h1>Edit Data</h1>
-<form action="update.php" METHOD="POST">
-    <label>id jenis laundry</label>
-    <input type="text" name="id_jenislaundry" value="<?php echo $data['id_jenislaundry'] ?>">
-    <br>
-    <label>nama jenis laundry</label>
-    <input type="text" name="nama_jenislaundry" value="<?php echo $data['nama_jenislaundry'] ?>">
-    <br>
-    <label>tarif</label>
-    <input type="text" name="tarif" value="<?php echo $data['tarif'] ?>">
-    <br>
-    <button>Simpan</button>
+<div class="mt-2 text-center">
+    <h1>Edit Data</h1>
+</div>
+<form action="?page=jenis_laundry/update"method="POST">
+<div class="mb-2">
+    <label class="form-label">Id Jenis Laundry</label>
+    <input type="text" class="form-control" name="id_jenislaundry">
+  </div>
+  <div class="mb-2">
+    <label class="form-label">Nama Jenis Laundry</label>
+    <input type="text" class="form-control" name="nama_jenislaundry">
+  </div>
+  <div class="mb-2">
+    <label class="form-label">Tarif</label>
+    <input type="text" class="form-control" name="tarif">
+  </div>
+    <div class="modal-footer text-center">
+    <button class="btn btn-primary">Simpan</button>
+    </div>
 </form>

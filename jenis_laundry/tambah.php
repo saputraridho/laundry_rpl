@@ -1,14 +1,22 @@
-<h1>Tambah Data</h1>
-
-<form action="simpan.php" METHOD="POST">
-    <label>id jenis laundry</label>
-    <input type="text" name="id_jenislaundry">
-    <br>
-    <label>nama jenis laundry</label>
-    <input type="text" name="nama_jenislaundry">
-    <br>
-    <label>tarif</label>
-    <input type="text" name="tarif">
-    <br>
-    <button>Simpan</button>
+<div class="mt-2 text-center">
+    <h1>Tambah Data</h1>
+</div>
+<div class="card-body">
+<form action="?page=jenis_laundry/simpan"method="POST">
+<div class="mb-2">
+    <label class="form-label">Id Jenis laundry</label>
+    <input type="text" class="form-control" name="id_jenislaundry">
+  </div>
+  <div class="mb-2">
+    <label class="form-label">Nama Jenis laundry</label>
+    <input type="text" class="form-control" name="nama_jenislaundry">
+  </div>
+  <div class="mb-2">
+    <label class="form-label">Tarif</label>
+    <input type="text" class="form-control" name="tarif">
+  </div>
+    <div class="modal-footer text-center">
+    <button class="btn btn-primary">Simpan</button>
+    </div>
 </form>
+</div>
